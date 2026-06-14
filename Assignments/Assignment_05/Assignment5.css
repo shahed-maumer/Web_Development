@@ -1,0 +1,77 @@
+* Reset بسيط */
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* ================= HEADER (Flexbox) ================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: darkblue;
+}
+
+/* ================= FEATURES (Grid) ================= */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}

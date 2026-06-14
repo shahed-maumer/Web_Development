@@ -5,27 +5,70 @@
     <title>Semantic Blog Page</title>
 </head>
 
-<body> <!-- Header -->
-    <header>
-        <h1>My Blog</h1> <!-- Navigation -->
-        <nav> <a href="#">Home</a> | <a href="#">Articles</a> | <a href="#">Contact</a> </nav>
+<body>
+
+    <!-- Header -->
+    <header id="top">
+        <h1>My Blog</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#article">Articles</a></li>
+                <li><a href="#related">Related</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr> <!-- Main Content -->
-    <main> <!-- Blog Article -->
-        <article>
-            <h2>Learning HTML Semantic Elements</h2> <!-- Time -->
-            <p> Published on: <time datetime="2026-06-01"> June 1, 2026 </time> </p> <!-- Figure -->
-            <figure> <img src="https://via.placeholder.com/400" alt="HTML Image">
-                <figcaption> Example of Semantic HTML Structure </figcaption>
-            </figure> <!-- Article Content -->
-            <p> Semantic HTML helps organize web pages using meaningful tags like header, nav, article, aside, and
-                footer. </p>
-            <p> These elements improve readability, accessibility, and SEO. </p> <!-- iframe -->
-            <h3>Watch Tutorial</h3> <iframe width="400" height="250" src="https://www.youtube.com/embed/qz0aGYrrlhU"
-                title="HTML Tutorial"> </iframe>
-        </article>
-        <hr> <!-- Aside -->
-        <aside>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Article Section -->
+        <section id="home">
+            <article id="article">
+
+                <h2>Learning HTML Semantic Elements</h2>
+
+                <!-- Time -->
+                <p>
+                    Published on:
+                    <time datetime="2026-06-01">June 1, 2026</time>
+                </p>
+
+                <!-- Figure -->
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="HTML Image">
+                    <figcaption>Example of Semantic HTML Structure</figcaption>
+                </figure>
+
+                <p>
+                    Semantic HTML helps organize web pages using meaningful tags like header, nav, article, aside, and footer.
+                </p>
+
+                <p>
+                    These elements improve readability, accessibility, and SEO.
+                </p>
+
+                <!-- Video (5 minutes) -->
+                <h3>Watch Tutorial</h3>
+
+                <iframe width="400" height="250"
+                    src="https://www.youtube.com/embed/3JluqTojuME"
+                    title="HTML in 5 Minutes"
+                    allowfullscreen>
+                </iframe>
+
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Aside -->
+        <aside id="related">
             <h3>Related Topics</h3>
             <ul>
                 <li>HTML Basics</li>
@@ -33,12 +76,33 @@
                 <li>Web Design</li>
             </ul>
         </aside>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>Email: myblog@email.com</p>
+        </section>
+
+        <br>
+
+        <!-- Back to top -->
+        <a href="#top">Back to Top ↑</a>
+
     </main>
-    <hr> <!-- Footer -->
+
+    <hr>
+
+    <!-- Footer -->
     <footer>
-        <p>Copyright © 2026 My Blog</p> <!-- Address -->
-        <address> Contact us: myblog@email.com </address>
+        <p>Copyright © 2026 My Blog</p>
+
+        <address>
+            Contact us: myblog@email.com
+        </address>
     </footer>
+
 </body>
 
 </html>
